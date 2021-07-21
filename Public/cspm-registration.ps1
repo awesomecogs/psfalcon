@@ -467,9 +467,13 @@ cspm-registration:read
         [string] $PolicyId,
 
         [Parameter(ParameterSetName = '/settings/entities/policy/v1:get', Position = 2)]
-        [ValidateSet('EC2', 'IAM', 'KMS', 'ACM', 'ELB', 'NLB/ALB', 'EBS', 'RDS', 'S3', 'Redshift',
-            'NetworkSecurityGroup', 'VirtualNetwork', 'Disk', 'PostgreSQL', 'AppService', 'KeyVault',
-            'VirtualMachine', 'Monitor', 'StorageAccount', 'LoadBalancer', 'SQLServer')]
+        [ValidateSet('ACM', 'ACR', 'AppService', 'CloudFormation', 'CloudTrail', 'CloudWatch Logs', 
+            'Cloudfront', 'Config', 'Disk', 'DynamoDB', 'EBS', 'EC2', 'ECR', 'EFS', 'EKS', 'ELB', 
+            'EMR', 'Elasticache', 'GuardDuty', 'IAM', 'Identity', 'KMS', 'KeyVault', 'Kinesis', 
+            'Kubernetes', 'Lambda', 'LoadBalancer', 'Monitor', 'NLB/ALB', 'NetworkSecurityGroup', 
+            'PostgreSQL', 'RDS', 'Redshift', 'S3', 'SES', 'SNS', 'SQLDatabase', 'SQLServer', 'SQS', 
+            'SSM', 'Serverless Application Repository', 'StorageAccount', 'Subscriptions', 
+            'VirtualMachine', 'VirtualNetwork')]
         [string] $Service,
 
         [Parameter(ParameterSetName = '/settings/entities/policy/v1:get', Position = 3)]
